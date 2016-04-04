@@ -9,7 +9,7 @@ DEPENDENCIES:
   - Alamofire (~> 3.2.1)
   - EasyTransition (~> 1.2)
   - IQKeyboardManagerSwift (~> 4.0.0)
-  - SteviaLayout
+  - SteviaLayout (~> 2.1.0)
   - SwiftyJSON (~> 2.3.2)
 
 SPEC CHECKSUMS:

@@ -27,7 +27,8 @@ class ViewController: BaseViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        nameLabel.frame = CGRectMake(20, 100, Global.WIDTH - 40, 250)
+        nameLabel.frame = CGRectMake(20, (Global.HEIGHT / 2) - (Global.HEIGHT / 2) / 2, Global.WIDTH - 40, Global.WIDTH)
+        
     }
 
 }
