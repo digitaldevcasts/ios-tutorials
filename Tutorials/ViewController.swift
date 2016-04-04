@@ -46,8 +46,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         button.addTarget(self, action: "buttonAction:", forControlEvents: .TouchUpInside)
         scrollView.addSubview(button)
         
+        let paddingView1 = UIView(frame:CGRectMake(0, 0, 20, self.firstText.frame.height))
+//        let paddingView2 = UIView(frame:CGRectMake(0, 0, 0, self.firstText.frame.height))
+        firstText.leftView = paddingView1
+        firstText.leftViewMode = UITextFieldViewMode.Always
+//        firstText.rightView = paddingView2
+//        firstText.rightViewMode = UITextFieldViewMode.Always
         firstText.backgroundColor = Color.WHITE
         firstText.placeholder = "First Name"
+        firstText.font = UIFont(name: FontType.R_REGULAR, size: FontSize.FONT_20)
+        firstText.textColor = Color.GREY_DARK_3
+//        firstText.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
         scrollView.addSubview(firstText)
         
         tableView.delegate = self
