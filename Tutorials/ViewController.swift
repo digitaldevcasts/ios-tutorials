@@ -8,18 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
+    
+    var nameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        nameLabel = UILabel()
+        nameLabel.text = "iD"
+        nameLabel.font = UIFont(name: FontType.R_BOLD, size: 250)
+        nameLabel.textColor = Color.WHITE
+        nameLabel.textAlignment = .Center
+        view.addSubview(nameLabel)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        nameLabel.frame = CGRectMake(20, 100, Global.WIDTH - 40, 250)
     }
-
 
 }
 

@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		D50C29FF1CB249CC00ED6A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50C29FE1CB249CC00ED6A29 /* AppDelegate.swift */; };
 		D50C2A011CB249CC00ED6A29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50C2A001CB249CC00ED6A29 /* ViewController.swift */; };
-		D50C2A041CB249CD00ED6A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50C2A021CB249CD00ED6A29 /* Main.storyboard */; };
 		D50C2A071CB249CD00ED6A29 /* Tutorials.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D50C2A051CB249CD00ED6A29 /* Tutorials.xcdatamodeld */; };
 		D50C2A091CB249CD00ED6A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50C2A081CB249CD00ED6A29 /* Assets.xcassets */; };
 		D50C2A0C1CB249CD00ED6A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50C2A0A1CB249CD00ED6A29 /* LaunchScreen.storyboard */; };
+		D5756F3F1CB24E3A005ED719 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */; };
+		D5756F471CB2531B005ED719 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5756F461CB2531B005ED719 /* Global.swift */; };
+		D5756F511CB25FE9005ED719 /* DroidSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F4C1CB25FE9005ED719 /* DroidSerif-Bold.ttf */; };
+		D5756F521CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F4D1CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf */; };
+		D5756F531CB25FE9005ED719 /* DroidSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F4E1CB25FE9005ED719 /* DroidSerif-Italic.ttf */; };
+		D5756F541CB25FE9005ED719 /* DroidSerif.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F4F1CB25FE9005ED719 /* DroidSerif.ttf */; };
+		D5756F551CB25FE9005ED719 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5756F501CB25FE9005ED719 /* LICENSE.txt */; };
+		D5756F5C1CB25FFD005ED719 /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5756F571CB25FFD005ED719 /* Apache License.txt */; };
+		D5756F5D1CB25FFD005ED719 /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F581CB25FFD005ED719 /* RobotoSlab-Bold.ttf */; };
+		D5756F5E1CB25FFD005ED719 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */; };
+		D5756F5F1CB25FFD005ED719 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */; };
+		D5756F601CB25FFD005ED719 /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */; };
+		E0C23C912BF217472F90324B /* Pods_Tutorials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB28CAF4946D5BFCF964721 /* Pods_Tutorials.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38EAAD1C912DACFF87B71FB6 /* Pods-Tutorials.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tutorials.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tutorials/Pods-Tutorials.release.xcconfig"; sourceTree = "<group>"; };
+		9BB28CAF4946D5BFCF964721 /* Pods_Tutorials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tutorials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8FF50202707B1443C75D95 /* Pods-Tutorials.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tutorials.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tutorials/Pods-Tutorials.debug.xcconfig"; sourceTree = "<group>"; };
 		D50C29FB1CB249CC00ED6A29 /* Tutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50C29FE1CB249CC00ED6A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D50C2A001CB249CC00ED6A29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D50C2A031CB249CD00ED6A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D50C2A061CB249CD00ED6A29 /* Tutorials.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tutorials.xcdatamodel; sourceTree = "<group>"; };
 		D50C2A081CB249CD00ED6A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D50C2A0B1CB249CD00ED6A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D50C2A0D1CB249CD00ED6A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Controller/BaseViewController.swift; sourceTree = "<group>"; };
+		D5756F461CB2531B005ED719 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Global/Global.swift; sourceTree = "<group>"; };
+		D5756F4C1CB25FE9005ED719 /* DroidSerif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidSerif-Bold.ttf"; sourceTree = "<group>"; };
+		D5756F4D1CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D5756F4E1CB25FE9005ED719 /* DroidSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidSerif-Italic.ttf"; sourceTree = "<group>"; };
+		D5756F4F1CB25FE9005ED719 /* DroidSerif.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroidSerif.ttf; sourceTree = "<group>"; };
+		D5756F501CB25FE9005ED719 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D5756F571CB25FFD005ED719 /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		D5756F581CB25FFD005ED719 /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
+		D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
+		D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C23C912BF217472F90324B /* Pods_Tutorials.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50A3CDA4080901793E3E3AA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D8FF50202707B1443C75D95 /* Pods-Tutorials.debug.xcconfig */,
+				38EAAD1C912DACFF87B71FB6 /* Pods-Tutorials.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AE60336E47C0C5CC7E74056 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BB28CAF4946D5BFCF964721 /* Pods_Tutorials.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D50C29F21CB249CC00ED6A29 = {
 			isa = PBXGroup;
 			children = (
 				D50C29FD1CB249CC00ED6A29 /* Tutorials */,
 				D50C29FC1CB249CC00ED6A29 /* Products */,
+				50A3CDA4080901793E3E3AA3 /* Pods */,
+				9AE60336E47C0C5CC7E74056 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +102,98 @@
 		D50C29FD1CB249CC00ED6A29 /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
-				D50C29FE1CB249CC00ED6A29 /* AppDelegate.swift */,
-				D50C2A001CB249CC00ED6A29 /* ViewController.swift */,
-				D50C2A021CB249CD00ED6A29 /* Main.storyboard */,
+				D5756F401CB24E52005ED719 /* Application */,
+				D5756F431CB24E89005ED719 /* Resources */,
+				D5756F441CB24FC4005ED719 /* Others */,
 				D50C2A081CB249CD00ED6A29 /* Assets.xcassets */,
+			);
+			path = Tutorials;
+			sourceTree = "<group>";
+		};
+		D5756F401CB24E52005ED719 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D5756F451CB252FF005ED719 /* Global */,
+				D5756F421CB24E78005ED719 /* Core */,
+				D5756F411CB24E5C005ED719 /* Controllers */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		D5756F411CB24E5C005ED719 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D50C2A001CB249CC00ED6A29 /* ViewController.swift */,
+				D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D5756F421CB24E78005ED719 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D50C29FE1CB249CC00ED6A29 /* AppDelegate.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D5756F431CB24E89005ED719 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D50C2A0A1CB249CD00ED6A29 /* LaunchScreen.storyboard */,
 				D50C2A0D1CB249CD00ED6A29 /* Info.plist */,
 				D50C2A051CB249CD00ED6A29 /* Tutorials.xcdatamodeld */,
 			);
-			path = Tutorials;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D5756F441CB24FC4005ED719 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D5756F481CB25BEA005ED719 /* Fonts */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		D5756F451CB252FF005ED719 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D5756F461CB2531B005ED719 /* Global.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		D5756F481CB25BEA005ED719 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D5756F561CB25FFD005ED719 /* roboto-slab */,
+				D5756F4B1CB25FE9005ED719 /* droid-serif */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		D5756F4B1CB25FE9005ED719 /* droid-serif */ = {
+			isa = PBXGroup;
+			children = (
+				D5756F4C1CB25FE9005ED719 /* DroidSerif-Bold.ttf */,
+				D5756F4D1CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf */,
+				D5756F4E1CB25FE9005ED719 /* DroidSerif-Italic.ttf */,
+				D5756F4F1CB25FE9005ED719 /* DroidSerif.ttf */,
+				D5756F501CB25FE9005ED719 /* LICENSE.txt */,
+			);
+			path = "droid-serif";
+			sourceTree = "<group>";
+		};
+		D5756F561CB25FFD005ED719 /* roboto-slab */ = {
+			isa = PBXGroup;
+			children = (
+				D5756F571CB25FFD005ED719 /* Apache License.txt */,
+				D5756F581CB25FFD005ED719 /* RobotoSlab-Bold.ttf */,
+				D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */,
+				D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */,
+				D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */,
+			);
+			path = "roboto-slab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D50C2A101CB249CD00ED6A29 /* Build configuration list for PBXNativeTarget "Tutorials" */;
 			buildPhases = (
+				0126F121CEF488053AC11783 /* Check Pods Manifest.lock */,
 				D50C29F71CB249CC00ED6A29 /* Sources */,
 				D50C29F81CB249CC00ED6A29 /* Frameworks */,
 				D50C29F91CB249CC00ED6A29 /* Resources */,
+				7875029CBBD16BEEC9A70366 /* Embed Pods Frameworks */,
+				A71E278360A3CD0EF84D8A56 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,20 +257,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5756F511CB25FE9005ED719 /* DroidSerif-Bold.ttf in Resources */,
 				D50C2A0C1CB249CD00ED6A29 /* LaunchScreen.storyboard in Resources */,
+				D5756F521CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf in Resources */,
+				D5756F551CB25FE9005ED719 /* LICENSE.txt in Resources */,
+				D5756F541CB25FE9005ED719 /* DroidSerif.ttf in Resources */,
+				D5756F5D1CB25FFD005ED719 /* RobotoSlab-Bold.ttf in Resources */,
+				D5756F5E1CB25FFD005ED719 /* RobotoSlab-Light.ttf in Resources */,
+				D5756F5C1CB25FFD005ED719 /* Apache License.txt in Resources */,
 				D50C2A091CB249CD00ED6A29 /* Assets.xcassets in Resources */,
-				D50C2A041CB249CD00ED6A29 /* Main.storyboard in Resources */,
+				D5756F531CB25FE9005ED719 /* DroidSerif-Italic.ttf in Resources */,
+				D5756F601CB25FFD005ED719 /* RobotoSlab-Thin.ttf in Resources */,
+				D5756F5F1CB25FFD005ED719 /* RobotoSlab-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0126F121CEF488053AC11783 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7875029CBBD16BEEC9A70366 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tutorials/Pods-Tutorials-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A71E278360A3CD0EF84D8A56 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tutorials/Pods-Tutorials-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D50C29F71CB249CC00ED6A29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5756F471CB2531B005ED719 /* Global.swift in Sources */,
 				D50C2A011CB249CC00ED6A29 /* ViewController.swift in Sources */,
+				D5756F3F1CB24E3A005ED719 /* BaseViewController.swift in Sources */,
 				D50C2A071CB249CD00ED6A29 /* Tutorials.xcdatamodeld in Sources */,
 				D50C29FF1CB249CC00ED6A29 /* AppDelegate.swift in Sources */,
 			);
@@ -147,14 +338,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D50C2A021CB249CD00ED6A29 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D50C2A031CB249CD00ED6A29 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D50C2A0A1CB249CD00ED6A29 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -251,6 +434,7 @@
 		};
 		D50C2A111CB249CD00ED6A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8FF50202707B1443C75D95 /* Pods-Tutorials.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tutorials/Info.plist;
@@ -262,6 +446,7 @@
 		};
 		D50C2A121CB249CD00ED6A29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38EAAD1C912DACFF87B71FB6 /* Pods-Tutorials.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tutorials/Info.plist;
@@ -290,6 +475,7 @@
 				D50C2A121CB249CD00ED6A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
