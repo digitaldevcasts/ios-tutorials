@@ -24,6 +24,8 @@
 		D5756F5E1CB25FFD005ED719 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */; };
 		D5756F5F1CB25FFD005ED719 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */; };
 		D5756F601CB25FFD005ED719 /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */; };
+		D5756F671CB29EB9005ED719 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5756F661CB29EB9005ED719 /* TestViewController.swift */; };
+		D5F5C3EC1CB2CDE7006A5670 /* PKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5C3EB1CB2CDE7006A5670 /* PKNotification.swift */; };
 		E0C23C912BF217472F90324B /* Pods_Tutorials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB28CAF4946D5BFCF964721 /* Pods_Tutorials.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
 		D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
 		D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
+		D5756F661CB29EB9005ED719 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = Views/TestViewController.swift; sourceTree = "<group>"; };
+		D5F5C3EB1CB2CDE7006A5670 /* PKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		D50C29FD1CB249CC00ED6A29 /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
+				D5F5C3EA1CB2CDD5006A5670 /* Library */,
 				D5756F401CB24E52005ED719 /* Application */,
 				D5756F431CB24E89005ED719 /* Resources */,
 				D5756F441CB24FC4005ED719 /* Others */,
@@ -116,6 +121,7 @@
 				D5756F451CB252FF005ED719 /* Global */,
 				D5756F421CB24E78005ED719 /* Core */,
 				D5756F411CB24E5C005ED719 /* Controllers */,
+				D5756F631CB29027005ED719 /* Views */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			children = (
 				D50C2A001CB249CC00ED6A29 /* ViewController.swift */,
 				D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */,
+				D5756F661CB29EB9005ED719 /* TestViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +201,21 @@
 				D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */,
 			);
 			path = "roboto-slab";
+			sourceTree = "<group>";
+		};
+		D5756F631CB29027005ED719 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D5F5C3EA1CB2CDD5006A5670 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D5F5C3EB1CB2CDE7006A5670 /* PKNotification.swift */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +353,9 @@
 				D50C2A011CB249CC00ED6A29 /* ViewController.swift in Sources */,
 				D5756F3F1CB24E3A005ED719 /* BaseViewController.swift in Sources */,
 				D50C2A071CB249CD00ED6A29 /* Tutorials.xcdatamodeld in Sources */,
+				D5756F671CB29EB9005ED719 /* TestViewController.swift in Sources */,
 				D50C29FF1CB249CC00ED6A29 /* AppDelegate.swift in Sources */,
+				D5F5C3EC1CB2CDE7006A5670 /* PKNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
