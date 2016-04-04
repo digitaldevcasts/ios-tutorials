@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let tableView = UITableView()
+    let scrollView = UIScrollView()
     
     var firstLabel: UILabel!
     var lastLabel: UILabel!
@@ -22,30 +23,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         view.backgroundColor = Color.BLUE_LIGHT_3
         
+        view.addSubview(scrollView)
+        
         firstLabel = UILabel()
         firstLabel.text = "Ary Munandar"
         firstLabel.font = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_20)
         firstLabel.textColor = Color.WHITE
         firstLabel.textAlignment = .Center
-        view.addSubview(firstLabel)
+        scrollView.addSubview(firstLabel)
         
         lastLabel = UILabel()
         lastLabel.text = "iOS Developer"
         lastLabel.font = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_20)
         lastLabel.textColor = Color.WHITE
         lastLabel.textAlignment = .Center
-        view.addSubview(lastLabel)
+        scrollView.addSubview(lastLabel)
         
         button.backgroundColor = Color.WHITE
         button.titleLabel!.font = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_18)
         button.setTitle("Button", forState: .Normal)
         button.setTitleColor(Color.BLUE_LIGHT_3, forState: .Normal)
         button.addTarget(self, action: "buttonAction:", forControlEvents: .TouchUpInside)
-        view.addSubview(button)
+        scrollView.addSubview(button)
         
         firstText.backgroundColor = Color.WHITE
         firstText.placeholder = "First Name"
-        view.addSubview(firstText)
+        scrollView.addSubview(firstText)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -55,35 +58,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.layoutMargins  = UIEdgeInsetsZero
         tableView.separatorInset = UIEdgeInsets(top: 0, left: Global.WIDTH - 40, bottom: 0, right: 0)
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        view.addSubview(tableView)
+        scrollView.addSubview(tableView)
         
     }
-    
-//    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-//        if UIDevice.currentDevice().orientation.isLandscape.boolValue {
-//            print("Landscape")
-//        } else {
-//            print("Portrait")
-//        }
-//    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         if UIDevice.currentDevice().orientation.isLandscape.boolValue {
             print("Landscape")
-            firstLabel.frame = CGRectMake(20, 20, Global.HEIGHT / 2 - 10, FontSize.FONT_24)
+            scrollView.contentSize = CGSize(width: Global.HEIGHT, height: Global.WIDTH)
+            scrollView.frame = CGRectMake(0, 0, Global.HEIGHT, Global.WIDTH)
+            firstLabel.frame = CGRectMake(20, 20, Global.HEIGHT / 2 - 20, FontSize.FONT_24)
             firstText.frame = CGRectMake(20, Global.WIDTH - 70, Global.HEIGHT - 40, 50)
-            lastLabel.frame = CGRectMake(20, firstLabel.frame.maxY, Global.HEIGHT / 2 - 10, FontSize.FONT_24)
-            button.frame = CGRectMake(Global.HEIGHT / 2 + 10, 20, Global.HEIGHT / 2 - 30, 50)
+            lastLabel.frame = CGRectMake(20, firstLabel.frame.maxY, Global.HEIGHT / 2 - 20, FontSize.FONT_24)
+            button.frame = CGRectMake(Global.HEIGHT / 2, 20, Global.HEIGHT / 2 - 20, 50)
             if button.frame.maxY < Global.HEIGHT / 2 + 50 {
-                tableView.frame = CGRectMake(Global.HEIGHT / 2 + 10, button.frame.maxY + 1, Global.HEIGHT / 2 - 30, 200)
+                tableView.frame = CGRectMake(Global.HEIGHT / 2, button.frame.maxY + 1, Global.HEIGHT / 2 - 20, 200)
             } else {
                 tableView.frame = CGRectMake(20, button.frame.maxY - 251 , Global.HEIGHT - 40, 200)
             }
-            print(firstLabel.frame)
         } else {
             print("Portrait")
+            scrollView.contentSize = CGSize(width: Global.WIDTH, height: Global.HEIGHT)
+            scrollView.frame = CGRectMake(0, 0, Global.WIDTH, Global.HEIGHT)
             firstLabel.frame = CGRectMake(20, 200, Global.WIDTH - 40, FontSize.FONT_24)
             firstText.frame = CGRectMake(20, Global.HEIGHT - 70, Global.WIDTH - 40, 50)
             lastLabel.frame = CGRectMake(20, firstLabel.frame.maxY, Global.WIDTH - 40, FontSize.FONT_24)
