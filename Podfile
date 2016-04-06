@@ -4,11 +4,11 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'Tutorials' do
-pod 'SteviaLayout’, ‘~> 2.1.0’
 pod 'Alamofire', '~> 3.2.1'
 pod 'SwiftyJSON', '~> 2.3.2'
 pod 'IQKeyboardManagerSwift', '~> 4.0.0'
 pod 'EasyTransition', '~> 1.2'
+pod 'SnapKit', '~> 0.15.0'
 # pod 'Material', '~> 1.37.3'
 # pod 'DGElasticPullToRefresh', '~> 1.0.3'
 # pod 'DLRadioButton', '~> 1.4.6'
