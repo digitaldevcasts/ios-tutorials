@@ -8,27 +8,53 @@
 
 import UIKit
 
-class ViewController: BaseViewController {
+class ViewController: ChildViewController {
     
-    var nameLabel: UILabel!
-
+    var isNew = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel = UILabel()
-        nameLabel.text = "iD"
-        nameLabel.font = UIFont(name: FontType.R_BOLD, size: 250)
-        nameLabel.textColor = Color.WHITE
-        nameLabel.textAlignment = .Center
-        view.addSubview(nameLabel)
+        if isNew {
+            viewNavigationBar(false, title: "Add an Address")
+        } else {
+            viewNavigationBar(false, title: "Edit Address")
+        }
+        
+        view.backgroundColor = Color.BLUE_LIGHT_3
+        
+        let arrayOfVillains = ["santa", "bugs", "superman", "batman", "Asd", "asdasd", "asdasdas"]
+        
+        var buttonY: CGFloat = 84
+        for villain in arrayOfVillains {
+            
+            
+            let villainButton = UIButton(frame: CGRect(x: 20, y: buttonY, width: Global.WIDTH - 40, height: 50))
+            buttonY = buttonY + 70  // we are going to space these UIButtons 50px apart
+            
+            villainButton.layer.cornerRadius = 0  // get some fancy pantsy rounding
+            villainButton.backgroundColor = UIColor.darkGrayColor()
+            villainButton.setTitle("\(villain)", forState: UIControlState.Normal)
+            villainButton.titleLabel!.text = "\(villain)"
+            villainButton.addTarget(self, action: "villainButtonPressed:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.view.addSubview(villainButton)  // myView in this case is the view you want these buttons added
+        }
+    }
+    
+    func villainButtonPressed(button:UIButton) {
+        
+        if button.titleLabel!.text != nil {
+            let vc = TestViewController()
+            vc.textToDisplay = button.titleLabel!.text!
+            self.showViewControllerWith(vc, usingAnimation: AnimationType.ANIMATE_LEFT)
+            
+        } else {
+            
+            print("Nowhere to go :/")
+            
+        }
         
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        nameLabel.frame = CGRectMake(20, 100, Global.WIDTH - 40, 250)
-    }
-
 }
 

@@ -24,6 +24,10 @@
 		D5756F5E1CB25FFD005ED719 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */; };
 		D5756F5F1CB25FFD005ED719 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */; };
 		D5756F601CB25FFD005ED719 /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */; };
+		D57681DF1CB37C0500BB9898 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57681DE1CB37C0500BB9898 /* TestViewController.swift */; };
+		D57681E11CB3C8AE00BB9898 /* SatuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57681E01CB3C8AE00BB9898 /* SatuViewController.swift */; };
+		D57681E31CB3F94000BB9898 /* DuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57681E21CB3F94000BB9898 /* DuaViewController.swift */; };
+		D5B368DC1CB513FB003D08C7 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B368DB1CB513FB003D08C7 /* ChildViewController.swift */; };
 		E0C23C912BF217472F90324B /* Pods_Tutorials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB28CAF4946D5BFCF964721 /* Pods_Tutorials.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,10 @@
 		D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
 		D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
 		D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
+		D57681DE1CB37C0500BB9898 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		D57681E01CB3C8AE00BB9898 /* SatuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SatuViewController.swift; sourceTree = "<group>"; };
+		D57681E21CB3F94000BB9898 /* DuaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuaViewController.swift; sourceTree = "<group>"; };
+		D5B368DB1CB513FB003D08C7 /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +131,11 @@
 		D5756F411CB24E5C005ED719 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D5B368DA1CB513BA003D08C7 /* BaseController */,
 				D50C2A001CB249CC00ED6A29 /* ViewController.swift */,
-				D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */,
+				D57681DE1CB37C0500BB9898 /* TestViewController.swift */,
+				D57681E01CB3C8AE00BB9898 /* SatuViewController.swift */,
+				D57681E21CB3F94000BB9898 /* DuaViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +205,15 @@
 				D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */,
 			);
 			path = "roboto-slab";
+			sourceTree = "<group>";
+		};
+		D5B368DA1CB513BA003D08C7 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */,
+				D5B368DB1CB513FB003D08C7 /* ChildViewController.swift */,
+			);
+			name = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,8 +349,12 @@
 			files = (
 				D5756F471CB2531B005ED719 /* Global.swift in Sources */,
 				D50C2A011CB249CC00ED6A29 /* ViewController.swift in Sources */,
+				D5B368DC1CB513FB003D08C7 /* ChildViewController.swift in Sources */,
 				D5756F3F1CB24E3A005ED719 /* BaseViewController.swift in Sources */,
+				D57681E31CB3F94000BB9898 /* DuaViewController.swift in Sources */,
 				D50C2A071CB249CD00ED6A29 /* Tutorials.xcdatamodeld in Sources */,
+				D57681DF1CB37C0500BB9898 /* TestViewController.swift in Sources */,
+				D57681E11CB3C8AE00BB9898 /* SatuViewController.swift in Sources */,
 				D50C29FF1CB249CC00ED6A29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
