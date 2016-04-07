@@ -44,6 +44,7 @@ class Color {
 class FontSize {
     
     static let FONT_10 : CGFloat = 10
+    static let FONT_11 : CGFloat = 11
     static let FONT_12 : CGFloat = 12
     static let FONT_14 : CGFloat = 14
     static let FONT_16 : CGFloat = 16
@@ -75,5 +76,20 @@ class FontType {
     static let R_LIGHT      = "RobotoSlab-Light"
     static let R_REGULAR    = "RobotoSlab-Regular"
     static let R_THIN       = "RobotoSlab-Thin"
+    
+}
+
+class Space {
+    
+    static let SPACE_ITEM_TO_SCREEN : CGFloat = 16
+    static let SPACE_ITEM_TO_ITEM : CGFloat = 8
+    
+}
+
+class NavigationItems {
+    
+    static let ITEM_SIZE : CGFloat = 30
+    static let ITEM_WIDTH : CGFloat = 30
+    static let ITEM_HEIGHT : CGFloat = 30
     
 }

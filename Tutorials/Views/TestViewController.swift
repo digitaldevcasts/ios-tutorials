@@ -9,7 +9,7 @@
 import UIKit
 import EasyTransition
 
-class TestViewController: BaseViewController {
+class TestViewController: ChildViewController {
     
     var transition: EasyTransition?
     

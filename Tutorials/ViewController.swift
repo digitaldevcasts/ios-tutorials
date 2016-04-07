@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: ChildViewController, UITableViewDataSource, UITableViewDelegate {
     
     let tableView = UITableView()
     let scrollView = UIScrollView()
@@ -17,13 +17,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var lastLabel: UILabel!
     let button = UIButton()
     let firstText = UITextField()
+    
+    var isNew = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = Color.BLUE_LIGHT_3
+        if isNew {
+            viewNavigationBar(false, title: "Add an Address")
+        } else {
+            viewNavigationBar(false, title: "Edit Address")
+        }
         
-        view.addSubview(scrollView)
+        view.backgroundColor = Color.BLUE_LIGHT_3
         
         firstLabel = UILabel()
         firstLabel.text = "Ary Munandar"
@@ -69,6 +75,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         scrollView.addSubview(tableView)
         
+        view.addSubview(scrollView)
+        view.addSubview(navigationBar)
     }
     
     override func viewDidLayoutSubviews() {
