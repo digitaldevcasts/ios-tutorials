@@ -7,46 +7,70 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let tableView = UITableView()
     
-    var firstLabel: UILabel!
+    var firstLabel: LabelBorder!
     var lastLabel: UILabel!
-    let button = UIButton()
-    let firstText = UITextField()
+    let button = ButtonBorder()
+    let firstText = TextFieldBorder()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = Color.BLUE_LIGHT_3
         
-        firstLabel = UILabel()
+        firstLabel = LabelBorder()
+        firstLabel.frame = CGRectMake(20, 200, Global.WIDTH - 40, Height.Label.HEIGHT_50)
         firstLabel.text = "Ary Munandar"
         firstLabel.font = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_20)
         firstLabel.textColor = Color.WHITE
         firstLabel.textAlignment = .Center
+        firstLabel.addBorder(.All, color: Color.WHITE, width: 1)
         view.addSubview(firstLabel)
         
         lastLabel = UILabel()
+        lastLabel.frame = CGRectMake(20, firstLabel.frame.maxY, Global.WIDTH - 40, Height.Label.HEIGHT_50)
         lastLabel.text = "iOS Developer"
         lastLabel.font = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_20)
         lastLabel.textColor = Color.WHITE
         lastLabel.textAlignment = .Center
         view.addSubview(lastLabel)
         
-        button.backgroundColor = Color.WHITE
-        button.titleLabel!.font = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_18)
-        button.setTitle("Button", forState: .Normal)
-        button.setTitleColor(Color.BLUE_LIGHT_3, forState: .Normal)
-        button.addTarget(self, action: "buttonAction:", forControlEvents: .TouchUpInside)
+        button.frame = CGRectMake(20, lastLabel.frame.maxY + 50, Global.WIDTH - 40, 50)
+        button.addBorder(
+            "Button",
+            titleColor      : Color.BLUE,
+            imageName       : "",
+            fontStyle       : FontType.R_BOLD,
+            fontSize        : FontSize.FONT_18,
+            borderPosition  : .Bottom,
+            borderColor     : Color.GREY_DARK_1,
+            borderWidth     : 2,
+            cornerRadius    : 0,
+            backgroundColor : Color.WHITE,
+            alignment       : .Right,
+            paddingLeft     : 10,
+            paddingRight    : 10,
+            paddingTop      : 0,
+            paddingBottom   : 0
+        )
+        button.addTarget(self, action: #selector(ViewController.buttonAction(_:)), forControlEvents: .TouchUpInside)
         view.addSubview(button)
         
-        firstText.backgroundColor = Color.WHITE
-        firstText.placeholder = "First Name"
+        firstText.frame = CGRectMake(20, Global.HEIGHT - 50, Global.WIDTH - 40, 30)
+        firstText.layer.masksToBounds = true
+        firstText.placeholder         = "First Name"
+        firstText.backgroundColor     = Color.CLEAR
+        firstText.tintColor           = Color.WHITE
+        firstText.addBorder(.Bottom, color: Color.WHITE, width: 1)
+        firstText.setValue(Color.WHITE, forKeyPath: "_placeholderLabel.textColor")
         view.addSubview(firstText)
         
+        tableView.frame = CGRectMake(20, button.frame.maxY, Global.WIDTH - 40, 200)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = Color.WHITE
@@ -59,41 +83,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
-//    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-//        if UIDevice.currentDevice().orientation.isLandscape.boolValue {
-//            print("Landscape")
-//        } else {
-//            print("Portrait")
-//        }
-//    }
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        if UIDevice.currentDevice().orientation.isLandscape.boolValue {
-            print("Landscape")
-            firstLabel.frame = CGRectMake(20, 20, Global.HEIGHT / 2 - 10, FontSize.FONT_24)
-            firstText.frame = CGRectMake(20, Global.WIDTH - 70, Global.HEIGHT - 40, 50)
-            lastLabel.frame = CGRectMake(20, firstLabel.frame.maxY, Global.HEIGHT / 2 - 10, FontSize.FONT_24)
-            button.frame = CGRectMake(Global.HEIGHT / 2 + 10, 20, Global.HEIGHT / 2 - 30, 50)
-            if button.frame.maxY < Global.HEIGHT / 2 + 50 {
-                tableView.frame = CGRectMake(Global.HEIGHT / 2 + 10, button.frame.maxY + 1, Global.HEIGHT / 2 - 30, 200)
-            } else {
-                tableView.frame = CGRectMake(20, button.frame.maxY - 251 , Global.HEIGHT - 40, 200)
-            }
-            print(firstLabel.frame)
-        } else {
-            print("Portrait")
-            firstLabel.frame = CGRectMake(20, 200, Global.WIDTH - 40, FontSize.FONT_24)
-            firstText.frame = CGRectMake(20, Global.HEIGHT - 70, Global.WIDTH - 40, 50)
-            lastLabel.frame = CGRectMake(20, firstLabel.frame.maxY, Global.WIDTH - 40, FontSize.FONT_24)
-            button.frame = CGRectMake(20, lastLabel.frame.maxY + 50, Global.WIDTH - 40, 50)
-            if button.frame.maxY < Global.HEIGHT / 2 + 50 {
-                tableView.frame = CGRectMake(20, button.frame.maxY + 1, Global.WIDTH - 40, 200)
-            } else {
-                tableView.frame = CGRectMake(20, button.frame.maxY - 251 , Global.WIDTH - 40, 200)
-            }
-        }
     
     }
     
@@ -130,4 +121,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
 }
+
+
 

@@ -38,7 +38,39 @@ class Color {
     static let GREY_DARK_1  = UIColor(red: 64.0/255.0, green: 64.0/255.0, blue: 64.0/255.0, alpha: 1.0)
     static let GREY_DARK_2  = UIColor(red: 56.0/255.0, green: 56.0/255.0, blue: 56.0/255.0, alpha: 1.0)
     static let GREY_DARK_3  = UIColor(red: 90.0/255.0, green: 90.0/255.0, blue: 90.0/255.0, alpha: 1.0)
+    static let CLEAR        = UIColor.clearColor()
     
+}
+
+class Height {
+    
+    class Text {
+        
+        static let HEIGHT_20 : CGFloat = 20
+        static let HEIGHT_30 : CGFloat = 30
+        static let HEIGHT_40 : CGFloat = 40
+        static let HEIGHT_50 : CGFloat = 50
+        
+    }
+    
+    class Label {
+        
+        static let HEIGHT_20 : CGFloat = 20
+        static let HEIGHT_30 : CGFloat = 30
+        static let HEIGHT_40 : CGFloat = 40
+        static let HEIGHT_50 : CGFloat = 50
+        
+    }
+    
+    class Border {
+        
+        static let HEIGHT_1 : CGFloat = 1
+        static let HEIGHT_2 : CGFloat = 2
+        static let HEIGHT_3 : CGFloat = 3
+        static let HEIGHT_4 : CGFloat = 4
+        static let HEIGHT_5 : CGFloat = 5
+        
+    }
 }
 
 class FontSize {

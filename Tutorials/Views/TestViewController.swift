@@ -21,7 +21,7 @@ class TestViewController: BaseViewController {
         button.backgroundColor = Color.WHITE
         button.setTitle("Test", forState: .Normal)
         button.setTitleColor(Color.BLACK, forState: .Normal)
-        button.addTarget(self, action: "buttonAction:", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(TestViewController.buttonAction(_:)), forControlEvents: .TouchUpInside)
         
         view.addSubview(button)
     }

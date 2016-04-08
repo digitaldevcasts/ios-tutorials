@@ -12,6 +12,11 @@
 		D50C2A071CB249CD00ED6A29 /* Tutorials.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D50C2A051CB249CD00ED6A29 /* Tutorials.xcdatamodeld */; };
 		D50C2A091CB249CD00ED6A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50C2A081CB249CD00ED6A29 /* Assets.xcassets */; };
 		D50C2A0C1CB249CD00ED6A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50C2A0A1CB249CD00ED6A29 /* LaunchScreen.storyboard */; };
+		D538CA871CB80F8C00AB3978 /* Home_Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538CA861CB80F8C00AB3978 /* Home_Views.swift */; };
+		D57490631CB814C9002527F5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57490621CB814C9002527F5 /* Login.swift */; };
+		D57490651CB82E34002527F5 /* TextFieldBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57490641CB82E34002527F5 /* TextFieldBorder.swift */; };
+		D57490671CB8307B002527F5 /* ButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57490661CB8307B002527F5 /* ButtonBorder.swift */; };
+		D57490691CB830E6002527F5 /* LabelBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57490681CB830E6002527F5 /* LabelBorder.swift */; };
 		D5756F3F1CB24E3A005ED719 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */; };
 		D5756F471CB2531B005ED719 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5756F461CB2531B005ED719 /* Global.swift */; };
 		D5756F511CB25FE9005ED719 /* DroidSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F4C1CB25FE9005ED719 /* DroidSerif-Bold.ttf */; };
@@ -40,6 +45,11 @@
 		D50C2A081CB249CD00ED6A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D50C2A0B1CB249CD00ED6A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D50C2A0D1CB249CD00ED6A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D538CA861CB80F8C00AB3978 /* Home_Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Home_Views.swift; path = Views/Home_Views.swift; sourceTree = "<group>"; };
+		D57490621CB814C9002527F5 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = Views/Login.swift; sourceTree = "<group>"; };
+		D57490641CB82E34002527F5 /* TextFieldBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldBorder.swift; path = Library/TextFieldBorder.swift; sourceTree = "<group>"; };
+		D57490661CB8307B002527F5 /* ButtonBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonBorder.swift; path = Library/ButtonBorder.swift; sourceTree = "<group>"; };
+		D57490681CB830E6002527F5 /* LabelBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelBorder.swift; sourceTree = "<group>"; };
 		D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Controller/BaseViewController.swift; sourceTree = "<group>"; };
 		D5756F461CB2531B005ED719 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Global/Global.swift; sourceTree = "<group>"; };
 		D5756F4C1CB25FE9005ED719 /* DroidSerif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidSerif-Bold.ttf"; sourceTree = "<group>"; };
@@ -118,8 +128,8 @@
 		D5756F401CB24E52005ED719 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				D5756F451CB252FF005ED719 /* Global */,
 				D5756F421CB24E78005ED719 /* Core */,
+				D5756F451CB252FF005ED719 /* Global */,
 				D5756F411CB24E5C005ED719 /* Controllers */,
 				D5756F631CB29027005ED719 /* Views */,
 			);
@@ -206,6 +216,8 @@
 		D5756F631CB29027005ED719 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D538CA861CB80F8C00AB3978 /* Home_Views.swift */,
+				D57490621CB814C9002527F5 /* Login.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -214,6 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				D5F5C3EB1CB2CDE7006A5670 /* PKNotification.swift */,
+				D57490641CB82E34002527F5 /* TextFieldBorder.swift */,
+				D57490661CB8307B002527F5 /* ButtonBorder.swift */,
+				D57490681CB830E6002527F5 /* LabelBorder.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -350,10 +365,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5756F471CB2531B005ED719 /* Global.swift in Sources */,
+				D538CA871CB80F8C00AB3978 /* Home_Views.swift in Sources */,
+				D57490691CB830E6002527F5 /* LabelBorder.swift in Sources */,
 				D50C2A011CB249CC00ED6A29 /* ViewController.swift in Sources */,
+				D57490651CB82E34002527F5 /* TextFieldBorder.swift in Sources */,
 				D5756F3F1CB24E3A005ED719 /* BaseViewController.swift in Sources */,
 				D50C2A071CB249CD00ED6A29 /* Tutorials.xcdatamodeld in Sources */,
 				D5756F671CB29EB9005ED719 /* TestViewController.swift in Sources */,
+				D57490631CB814C9002527F5 /* Login.swift in Sources */,
+				D57490671CB8307B002527F5 /* ButtonBorder.swift in Sources */,
 				D50C29FF1CB249CC00ED6A29 /* AppDelegate.swift in Sources */,
 				D5F5C3EC1CB2CDE7006A5670 /* PKNotification.swift in Sources */,
 			);

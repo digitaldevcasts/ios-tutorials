@@ -107,7 +107,7 @@ class PKNotificationClass: UIViewController {
     
     required override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "rotated", name: UIDeviceOrientationDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PKNotificationClass.rotated), name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
     
     override func viewDidLoad() {
@@ -357,7 +357,7 @@ class PKNotificationClass: UIViewController {
                         let titleColor:UIColor? = ((b as! PKButton).titleLabel?.textColor == UIColor.whiteColor()) ? nil : (b as! PKButton).titleLabel?.textColor
                         (b as! PKButton).setTitleColor((titleColor == nil) ? tintColor : titleColor, forState: UIControlState.Normal)
                         (b as! PKButton).backgroundColor = ((b as! PKButton).backgroundColor == nil) ? self.parent.alertBackgroundColor : b.backgroundColor
-                        (b as! PKButton).addTarget(self, action:"buttonDown:", forControlEvents: UIControlEvents.TouchUpInside)
+                        (b as! PKButton).addTarget(self, action:#selector(PKAlert.buttonDown(_:)), forControlEvents: UIControlEvents.TouchUpInside)
                         items.append((b as! PKButton))
                     } else if (b.isKindOfClass(UITextField) || b is UIButton){
                         let theLast:AnyObject? = items.last
@@ -377,7 +377,7 @@ class PKNotificationClass: UIViewController {
             
             let cancelButtonTitle:String! = (c == nil) ? "Dissmiss" : c
             cancelButton = PKButton(title: cancelButtonTitle!, action: {(items) -> Bool in return true}, fontColor: tintColor, backgroundColor: parent.alertBackgroundColor)
-            cancelButton.addTarget(self, action:"buttonDown:", forControlEvents: UIControlEvents.TouchUpInside)
+            cancelButton.addTarget(self, action:#selector(PKAlert.buttonDown(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             
             /* put parts on an alertview and add it as subview on self.view */
             resizeParts()
@@ -404,7 +404,7 @@ class PKNotificationClass: UIViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            let tapRecognizer = UITapGestureRecognizer(target: self, action: "handleSingleTap:")
+            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(PKAlert.handleSingleTap(_:)))
             tapRecognizer.numberOfTapsRequired = 1
             self.view.addGestureRecognizer(tapRecognizer)
         }
@@ -553,14 +553,14 @@ class PKNotificationClass: UIViewController {
                     let titleColor:UIColor? = (b.titleLabel?.textColor == UIColor.whiteColor()) ? nil : b.titleLabel?.textColor
                     b.setTitleColor((titleColor == nil) ? tintColor : titleColor, forState: UIControlState.Normal)
                     b.backgroundColor = (b.backgroundColor == nil) ? self.parent.actionSheetBackgroundColor : b.backgroundColor
-                    b.addTarget(self, action:"buttonDown:", forControlEvents: UIControlEvents.TouchUpInside)
+                    b.addTarget(self, action:#selector(PKAlert.buttonDown(_:)), forControlEvents: UIControlEvents.TouchUpInside)
                     items.append(b)
                 }
             }
             
             let cancelButtonTitle:String! = (c == nil) ? "Dissmiss" : c
             cancelButton = PKButton(title: cancelButtonTitle!, action: {(items) -> Bool in return true}, fontColor: tintColor, backgroundColor: parent.actionSheetBackgroundColor)
-            cancelButton.addTarget(self, action:"buttonDown:", forControlEvents: UIControlEvents.TouchUpInside)
+            cancelButton.addTarget(self, action:#selector(PKAlert.buttonDown(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             
             /* put parts on an alertview and add it as subview on self.view */
             resizeParts()
@@ -586,7 +586,7 @@ class PKNotificationClass: UIViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            let tapRecognizer = UITapGestureRecognizer(target: self, action: "handleSingleTap:")
+            let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(PKAlert.handleSingleTap(_:)))
             tapRecognizer.numberOfTapsRequired = 1
             self.view.addGestureRecognizer(tapRecognizer)
         }
