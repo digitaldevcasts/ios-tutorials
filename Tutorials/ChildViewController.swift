@@ -72,42 +72,42 @@ class ChildViewController: BaseViewController {
         let menuImage: UIImage? = UIImage(named: "Menu")
         menuButton.setImage(menuImage, forState: .Normal)
         menuButton.setImage(menuImage, forState: .Highlighted)
-        menuButton.addTarget(self, action: Selector("action1:"), forControlEvents: .TouchUpInside)
+        menuButton.addTarget(self, action: Selector("menuAction:"), forControlEvents: .TouchUpInside)
         let menuItem = UIBarButtonItem()
         menuItem.customView = menuButton
         
         let closeImage: UIImage? = UIImage(named: "Close")
         closeButton.setImage(closeImage, forState: .Normal)
         closeButton.setImage(closeImage, forState: .Highlighted)
-        closeButton.addTarget(self, action: Selector("action2:"), forControlEvents: .TouchUpInside)
+        closeButton.addTarget(self, action: Selector("closeAction:"), forControlEvents: .TouchUpInside)
         let closeItem = UIBarButtonItem()
         closeItem.customView = closeButton
         
         let searchImage: UIImage? = UIImage(named: "Search")
         searchButton.setImage(searchImage, forState: .Normal)
         searchButton.setImage(searchImage, forState: .Highlighted)
-        searchButton.addTarget(self, action: Selector("action2:"), forControlEvents: .TouchUpInside)
+        searchButton.addTarget(self, action: Selector("searchAction:"), forControlEvents: .TouchUpInside)
         let searchItem = UIBarButtonItem()
         searchItem.customView = searchButton
         
         let cartImage: UIImage? = UIImage(named: "Cart icon passive")
         cartButton.setImage(cartImage, forState: .Normal)
         cartButton.setImage(cartImage, forState: .Highlighted)
-        cartButton.addTarget(self, action: Selector("action2:"), forControlEvents: .TouchUpInside)
+        cartButton.addTarget(self, action: Selector("cartAction:"), forControlEvents: .TouchUpInside)
         let cartItem = UIBarButtonItem()
         cartItem.customView = cartButton
         
         cancelButton.titleLabel!.font  = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_11)
         cancelButton.setTitleColor(Color.GREY_DARK_3, forState: .Normal)
         cancelButton.setTitle("Cancel", forState: .Normal)
-        cancelButton.addTarget(self, action: Selector("action1:"), forControlEvents: .TouchUpInside)
+        cancelButton.addTarget(self, action: Selector("cancelAction:"), forControlEvents: .TouchUpInside)
         let cancelItem = UIBarButtonItem()
         cancelItem.customView = cancelButton
         
         doneButton.titleLabel!.font  = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_11)
         doneButton.setTitleColor(Color.GREY_DARK_3, forState: .Normal)
         doneButton.setTitle("Done", forState: .Normal)
-        doneButton.addTarget(self, action: Selector("action1:"), forControlEvents: .TouchUpInside)
+        doneButton.addTarget(self, action: Selector("doneAction:"), forControlEvents: .TouchUpInside)
         let doneItem = UIBarButtonItem()
         doneItem.customView = doneButton
         
@@ -119,18 +119,29 @@ class ChildViewController: BaseViewController {
         UINavigationBar.appearance().titleTextAttributes = attrs
         UINavigationBar.appearance().barTintColor = Color.WHITE
         
-        navigationItem.title = title
-        
         if showBack {
             navigationItem.rightBarButtonItems = [cartItem, menuItem]
             navigationItem.leftBarButtonItems = [searchItem, searchTextItem]
         } else {
-            navigationItem.rightBarButtonItems = [doneItem]
-            navigationItem.leftBarButtonItems = [cancelItem]
+            navigationItem.title = title
+            navigationItem.rightBarButtonItems = [closeItem]
+            navigationItem.leftBarButtonItems = [menuItem]
         }
         
         navigationBar.items = [navigationItem]
         
+    }
+    
+    func menuAction(button: UIButton) {
+        print("Menu")
+    }
+    
+    func cartAction(button: UIButton) {
+        print("Cart")
+    }
+    
+    func closeAction(button: UIButton) {
+        print("Close")
     }
     
 }

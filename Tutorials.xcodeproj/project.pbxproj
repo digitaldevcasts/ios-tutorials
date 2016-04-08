@@ -26,6 +26,7 @@
 		D5756F671CB29EB9005ED719 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5756F661CB29EB9005ED719 /* TestViewController.swift */; };
 		D5C491931CB5350300AA5F94 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C491921CB5350300AA5F94 /* ChildViewController.swift */; };
 		D5C491951CB5352A00AA5F94 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C491941CB5352A00AA5F94 /* BaseViewController.swift */; };
+		D5D9A1211CB6489B00C87916 /* ButtonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D9A1201CB6489B00C87916 /* ButtonListViewController.swift */; };
 		D5F5C3EC1CB2CDE7006A5670 /* PKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5C3EB1CB2CDE7006A5670 /* PKNotification.swift */; };
 		E0C23C912BF217472F90324B /* Pods_Tutorials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB28CAF4946D5BFCF964721 /* Pods_Tutorials.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		D5756F661CB29EB9005ED719 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = Views/TestViewController.swift; sourceTree = "<group>"; };
 		D5C491921CB5350300AA5F94 /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		D5C491941CB5352A00AA5F94 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D5D9A1201CB6489B00C87916 /* ButtonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonListViewController.swift; sourceTree = "<group>"; };
 		D5F5C3EB1CB2CDE7006A5670 /* PKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKNotification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				D5C491941CB5352A00AA5F94 /* BaseViewController.swift */,
 				D50C2A001CB249CC00ED6A29 /* ViewController.swift */,
 				D5756F661CB29EB9005ED719 /* TestViewController.swift */,
+				D5D9A1201CB6489B00C87916 /* ButtonListViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				TargetAttributes = {
 					D50C29FA1CB249CC00ED6A29 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = M85BV5L9H2;
 					};
 				};
 			};
@@ -352,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D9A1211CB6489B00C87916 /* ButtonListViewController.swift in Sources */,
 				D5756F471CB2531B005ED719 /* Global.swift in Sources */,
 				D50C2A011CB249CC00ED6A29 /* ViewController.swift in Sources */,
 				D50C2A071CB249CD00ED6A29 /* Tutorials.xcdatamodeld in Sources */,
@@ -465,10 +470,15 @@
 			baseConfigurationReference = 9D8FF50202707B1443C75D95 /* Pods-Tutorials.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tutorials/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.digitaldevcasts.Tutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -477,10 +487,15 @@
 			baseConfigurationReference = 38EAAD1C912DACFF87B71FB6 /* Pods-Tutorials.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tutorials/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.digitaldevcasts.Tutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
