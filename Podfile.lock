@@ -3,7 +3,6 @@ PODS:
   - EasyTransition (1.2)
   - IQKeyboardManagerSwift (4.0.1)
   - SnapKit (0.15.0)
-  - SteviaLayout (2.1.2)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
@@ -11,7 +10,6 @@ DEPENDENCIES:
   - EasyTransition (<= 1.2)
   - IQKeyboardManagerSwift (<= 4.0.1)
   - SnapKit (<= 0.15.0)
-  - SteviaLayout (<= 2.1.2)
   - SwiftyJSON (<= 2.3.2)
 
 SPEC CHECKSUMS:
@@ -19,7 +17,6 @@ SPEC CHECKSUMS:
   EasyTransition: 2ec063f34b6ce4b0de66498656c059489238a549
   IQKeyboardManagerSwift: e92246955e21dad73ad9dc89b80adb134d8bb395
   SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
-  SteviaLayout: dd483467f2e9ff3b5922531d6c5e96e60b2c4633
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0
