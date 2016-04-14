@@ -7,30 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D50C29FF1CB249CC00ED6A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50C29FE1CB249CC00ED6A29 /* AppDelegate.swift */; };
-		D50C2A011CB249CC00ED6A29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50C2A001CB249CC00ED6A29 /* ViewController.swift */; };
-		D50C2A071CB249CD00ED6A29 /* Tutorials.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D50C2A051CB249CD00ED6A29 /* Tutorials.xcdatamodeld */; };
 		D50C2A091CB249CD00ED6A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50C2A081CB249CD00ED6A29 /* Assets.xcassets */; };
 		D50C2A0C1CB249CD00ED6A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D50C2A0A1CB249CD00ED6A29 /* LaunchScreen.storyboard */; };
-		D538CA871CB80F8C00AB3978 /* Home_Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = D538CA861CB80F8C00AB3978 /* Home_Views.swift */; };
-		D57490631CB814C9002527F5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57490621CB814C9002527F5 /* Login.swift */; };
-		D57490651CB82E34002527F5 /* TextFieldBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57490641CB82E34002527F5 /* TextFieldBorder.swift */; };
-		D57490671CB8307B002527F5 /* InnovectoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57490661CB8307B002527F5 /* InnovectoButton.swift */; };
-		D57490691CB830E6002527F5 /* LabelBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57490681CB830E6002527F5 /* LabelBorder.swift */; };
-		D5756F3F1CB24E3A005ED719 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */; };
-		D5756F471CB2531B005ED719 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5756F461CB2531B005ED719 /* Global.swift */; };
-		D5756F511CB25FE9005ED719 /* DroidSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F4C1CB25FE9005ED719 /* DroidSerif-Bold.ttf */; };
-		D5756F521CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F4D1CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf */; };
-		D5756F531CB25FE9005ED719 /* DroidSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F4E1CB25FE9005ED719 /* DroidSerif-Italic.ttf */; };
-		D5756F541CB25FE9005ED719 /* DroidSerif.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F4F1CB25FE9005ED719 /* DroidSerif.ttf */; };
-		D5756F551CB25FE9005ED719 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5756F501CB25FE9005ED719 /* LICENSE.txt */; };
-		D5756F5C1CB25FFD005ED719 /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5756F571CB25FFD005ED719 /* Apache License.txt */; };
-		D5756F5D1CB25FFD005ED719 /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F581CB25FFD005ED719 /* RobotoSlab-Bold.ttf */; };
-		D5756F5E1CB25FFD005ED719 /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */; };
-		D5756F5F1CB25FFD005ED719 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */; };
-		D5756F601CB25FFD005ED719 /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */; };
-		D5756F671CB29EB9005ED719 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5756F661CB29EB9005ED719 /* TestViewController.swift */; };
-		D5F5C3EC1CB2CDE7006A5670 /* PKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5C3EB1CB2CDE7006A5670 /* PKNotification.swift */; };
+		D520BDF21CBFE70F008092D2 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BDF11CBFE70F008092D2 /* Button.swift */; };
+		D520BDF61CBFE743008092D2 /* InnovectoActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BDF31CBFE743008092D2 /* InnovectoActionButton.swift */; };
+		D520BDF71CBFE743008092D2 /* InnovectoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BDF41CBFE743008092D2 /* InnovectoButton.swift */; };
+		D520BDF81CBFE743008092D2 /* InnovectoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BDF51CBFE743008092D2 /* InnovectoTextField.swift */; };
+		D520BDFA1CBFE74F008092D2 /* PKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BDF91CBFE74F008092D2 /* PKNotification.swift */; };
+		D520BDFF1CBFE78C008092D2 /* gotham-rounded-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D520BDFB1CBFE78C008092D2 /* gotham-rounded-bold.otf */; };
+		D520BE001CBFE78C008092D2 /* gotham-rounded-book.otf in Resources */ = {isa = PBXBuildFile; fileRef = D520BDFC1CBFE78C008092D2 /* gotham-rounded-book.otf */; };
+		D520BE011CBFE78C008092D2 /* gotham-rounded-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D520BDFD1CBFE78C008092D2 /* gotham-rounded-light.otf */; };
+		D520BE021CBFE78C008092D2 /* gotham-rounded-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D520BDFE1CBFE78C008092D2 /* gotham-rounded-medium.otf */; };
+		D520BE071CBFE7BA008092D2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BE051CBFE7BA008092D2 /* BaseViewController.swift */; };
+		D520BE081CBFE7BA008092D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BE061CBFE7BA008092D2 /* ViewController.swift */; };
+		D520BE0A1CBFE7C7008092D2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BE091CBFE7C7008092D2 /* Global.swift */; };
+		D520BE0C1CBFE7D2008092D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BE0B1CBFE7D2008092D2 /* AppDelegate.swift */; };
+		D520BE0E1CBFE820008092D2 /* InnovectoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520BE0D1CBFE820008092D2 /* InnovectoLabel.swift */; };
+		D520BE111CBFE89D008092D2 /* Tutorials.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D520BE0F1CBFE89D008092D2 /* Tutorials.xcdatamodeld */; };
+		D520BE171CBFE908008092D2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D520BE161CBFE908008092D2 /* Info.plist */; };
 		E0C23C912BF217472F90324B /* Pods_Tutorials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB28CAF4946D5BFCF964721 /* Pods_Tutorials.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,31 +33,24 @@
 		9BB28CAF4946D5BFCF964721 /* Pods_Tutorials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tutorials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8FF50202707B1443C75D95 /* Pods-Tutorials.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tutorials.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tutorials/Pods-Tutorials.debug.xcconfig"; sourceTree = "<group>"; };
 		D50C29FB1CB249CC00ED6A29 /* Tutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D50C29FE1CB249CC00ED6A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D50C2A001CB249CC00ED6A29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D50C2A061CB249CD00ED6A29 /* Tutorials.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tutorials.xcdatamodel; sourceTree = "<group>"; };
 		D50C2A081CB249CD00ED6A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D50C2A0B1CB249CD00ED6A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D50C2A0D1CB249CD00ED6A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D538CA861CB80F8C00AB3978 /* Home_Views.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Home_Views.swift; path = Views/Home_Views.swift; sourceTree = "<group>"; };
-		D57490621CB814C9002527F5 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = Views/Login.swift; sourceTree = "<group>"; };
-		D57490641CB82E34002527F5 /* TextFieldBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldBorder.swift; path = Library/TextFieldBorder.swift; sourceTree = "<group>"; };
-		D57490661CB8307B002527F5 /* InnovectoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InnovectoButton.swift; path = Library/InnovectoButton.swift; sourceTree = "<group>"; };
-		D57490681CB830E6002527F5 /* LabelBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelBorder.swift; sourceTree = "<group>"; };
-		D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Controller/BaseViewController.swift; sourceTree = "<group>"; };
-		D5756F461CB2531B005ED719 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Global/Global.swift; sourceTree = "<group>"; };
-		D5756F4C1CB25FE9005ED719 /* DroidSerif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidSerif-Bold.ttf"; sourceTree = "<group>"; };
-		D5756F4D1CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
-		D5756F4E1CB25FE9005ED719 /* DroidSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DroidSerif-Italic.ttf"; sourceTree = "<group>"; };
-		D5756F4F1CB25FE9005ED719 /* DroidSerif.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroidSerif.ttf; sourceTree = "<group>"; };
-		D5756F501CB25FE9005ED719 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		D5756F571CB25FFD005ED719 /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
-		D5756F581CB25FFD005ED719 /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
-		D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
-		D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
-		D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
-		D5756F661CB29EB9005ED719 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestViewController.swift; path = Views/TestViewController.swift; sourceTree = "<group>"; };
-		D5F5C3EB1CB2CDE7006A5670 /* PKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKNotification.swift; sourceTree = "<group>"; };
+		D520BDF11CBFE70F008092D2 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Application/Properties/Button.swift; sourceTree = "<group>"; };
+		D520BDF31CBFE743008092D2 /* InnovectoActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InnovectoActionButton.swift; path = Application/Library/Innovecto/InnovectoActionButton.swift; sourceTree = "<group>"; };
+		D520BDF41CBFE743008092D2 /* InnovectoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InnovectoButton.swift; path = Application/Library/Innovecto/InnovectoButton.swift; sourceTree = "<group>"; };
+		D520BDF51CBFE743008092D2 /* InnovectoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InnovectoTextField.swift; path = Application/Library/Innovecto/InnovectoTextField.swift; sourceTree = "<group>"; };
+		D520BDF91CBFE74F008092D2 /* PKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PKNotification.swift; path = Application/Library/PKNotification.swift; sourceTree = "<group>"; };
+		D520BDFB1CBFE78C008092D2 /* gotham-rounded-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gotham-rounded-bold.otf"; path = "Resources/Fonts/gotham/gotham-rounded-bold.otf"; sourceTree = "<group>"; };
+		D520BDFC1CBFE78C008092D2 /* gotham-rounded-book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gotham-rounded-book.otf"; path = "Resources/Fonts/gotham/gotham-rounded-book.otf"; sourceTree = "<group>"; };
+		D520BDFD1CBFE78C008092D2 /* gotham-rounded-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gotham-rounded-light.otf"; path = "Resources/Fonts/gotham/gotham-rounded-light.otf"; sourceTree = "<group>"; };
+		D520BDFE1CBFE78C008092D2 /* gotham-rounded-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "gotham-rounded-medium.otf"; path = "Resources/Fonts/gotham/gotham-rounded-medium.otf"; sourceTree = "<group>"; };
+		D520BE051CBFE7BA008092D2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Application/Controller/BaseViewController.swift; sourceTree = "<group>"; };
+		D520BE061CBFE7BA008092D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Application/Controller/ViewController.swift; sourceTree = "<group>"; };
+		D520BE091CBFE7C7008092D2 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Global.swift; path = Application/Global/Global.swift; sourceTree = "<group>"; };
+		D520BE0B1CBFE7D2008092D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/Core/AppDelegate.swift; sourceTree = "<group>"; };
+		D520BE0D1CBFE820008092D2 /* InnovectoLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InnovectoLabel.swift; path = Application/Library/InnovectoLabel.swift; sourceTree = "<group>"; };
+		D520BE101CBFE89D008092D2 /* Tutorials.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tutorials.xcdatamodel; sourceTree = "<group>"; };
+		D520BE161CBFE908008092D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Others/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +103,6 @@
 		D50C29FD1CB249CC00ED6A29 /* Tutorials */ = {
 			isa = PBXGroup;
 			children = (
-				D5F5C3EA1CB2CDD5006A5670 /* Library */,
 				D5756F401CB24E52005ED719 /* Application */,
 				D5756F431CB24E89005ED719 /* Resources */,
 				D5756F441CB24FC4005ED719 /* Others */,
@@ -125,13 +111,24 @@
 			path = Tutorials;
 			sourceTree = "<group>";
 		};
+		D520BDEE1CBFE520008092D2 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				D520BDF11CBFE70F008092D2 /* Button.swift */,
+			);
+			name = Properties;
+			sourceTree = "<group>";
+		};
 		D5756F401CB24E52005ED719 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				D5756F421CB24E78005ED719 /* Core */,
 				D5756F451CB252FF005ED719 /* Global */,
 				D5756F411CB24E5C005ED719 /* Controllers */,
+				D5FB0ADA1CBFDFB900B032ED /* Models */,
 				D5756F631CB29027005ED719 /* Views */,
+				D5F5C3EA1CB2CDD5006A5670 /* Library */,
+				D520BDEE1CBFE520008092D2 /* Properties */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -139,9 +136,8 @@
 		D5756F411CB24E5C005ED719 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D50C2A001CB249CC00ED6A29 /* ViewController.swift */,
-				D5756F3E1CB24E3A005ED719 /* BaseViewController.swift */,
-				D5756F661CB29EB9005ED719 /* TestViewController.swift */,
+				D520BE051CBFE7BA008092D2 /* BaseViewController.swift */,
+				D520BE061CBFE7BA008092D2 /* ViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -149,7 +145,7 @@
 		D5756F421CB24E78005ED719 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D50C29FE1CB249CC00ED6A29 /* AppDelegate.swift */,
+				D520BE0B1CBFE7D2008092D2 /* AppDelegate.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -157,9 +153,7 @@
 		D5756F431CB24E89005ED719 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D50C2A0A1CB249CD00ED6A29 /* LaunchScreen.storyboard */,
-				D50C2A0D1CB249CD00ED6A29 /* Info.plist */,
-				D50C2A051CB249CD00ED6A29 /* Tutorials.xcdatamodeld */,
+				D5756F481CB25BEA005ED719 /* Fonts */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -167,7 +161,9 @@
 		D5756F441CB24FC4005ED719 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				D5756F481CB25BEA005ED719 /* Fonts */,
+				D520BE161CBFE908008092D2 /* Info.plist */,
+				D50C2A0A1CB249CD00ED6A29 /* LaunchScreen.storyboard */,
+				D520BE0F1CBFE89D008092D2 /* Tutorials.xcdatamodeld */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -175,7 +171,7 @@
 		D5756F451CB252FF005ED719 /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				D5756F461CB2531B005ED719 /* Global.swift */,
+				D520BE091CBFE7C7008092D2 /* Global.swift */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -183,41 +179,14 @@
 		D5756F481CB25BEA005ED719 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				D5756F561CB25FFD005ED719 /* roboto-slab */,
-				D5756F4B1CB25FE9005ED719 /* droid-serif */,
+				D5FB0AD91CBFDF1200B032ED /* Gotham */,
 			);
 			name = Fonts;
-			sourceTree = "<group>";
-		};
-		D5756F4B1CB25FE9005ED719 /* droid-serif */ = {
-			isa = PBXGroup;
-			children = (
-				D5756F4C1CB25FE9005ED719 /* DroidSerif-Bold.ttf */,
-				D5756F4D1CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf */,
-				D5756F4E1CB25FE9005ED719 /* DroidSerif-Italic.ttf */,
-				D5756F4F1CB25FE9005ED719 /* DroidSerif.ttf */,
-				D5756F501CB25FE9005ED719 /* LICENSE.txt */,
-			);
-			path = "droid-serif";
-			sourceTree = "<group>";
-		};
-		D5756F561CB25FFD005ED719 /* roboto-slab */ = {
-			isa = PBXGroup;
-			children = (
-				D5756F571CB25FFD005ED719 /* Apache License.txt */,
-				D5756F581CB25FFD005ED719 /* RobotoSlab-Bold.ttf */,
-				D5756F591CB25FFD005ED719 /* RobotoSlab-Light.ttf */,
-				D5756F5A1CB25FFD005ED719 /* RobotoSlab-Regular.ttf */,
-				D5756F5B1CB25FFD005ED719 /* RobotoSlab-Thin.ttf */,
-			);
-			path = "roboto-slab";
 			sourceTree = "<group>";
 		};
 		D5756F631CB29027005ED719 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D538CA861CB80F8C00AB3978 /* Home_Views.swift */,
-				D57490621CB814C9002527F5 /* Login.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -225,12 +194,39 @@
 		D5F5C3EA1CB2CDD5006A5670 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				D5F5C3EB1CB2CDE7006A5670 /* PKNotification.swift */,
-				D57490641CB82E34002527F5 /* TextFieldBorder.swift */,
-				D57490661CB8307B002527F5 /* InnovectoButton.swift */,
-				D57490681CB830E6002527F5 /* LabelBorder.swift */,
+				D5FB0ADB1CBFE2D900B032ED /* Innovecto */,
+				D520BDF91CBFE74F008092D2 /* PKNotification.swift */,
 			);
 			name = Library;
+			sourceTree = "<group>";
+		};
+		D5FB0AD91CBFDF1200B032ED /* Gotham */ = {
+			isa = PBXGroup;
+			children = (
+				D520BDFB1CBFE78C008092D2 /* gotham-rounded-bold.otf */,
+				D520BDFC1CBFE78C008092D2 /* gotham-rounded-book.otf */,
+				D520BDFD1CBFE78C008092D2 /* gotham-rounded-light.otf */,
+				D520BDFE1CBFE78C008092D2 /* gotham-rounded-medium.otf */,
+			);
+			name = Gotham;
+			sourceTree = "<group>";
+		};
+		D5FB0ADA1CBFDFB900B032ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D5FB0ADB1CBFE2D900B032ED /* Innovecto */ = {
+			isa = PBXGroup;
+			children = (
+				D520BE0D1CBFE820008092D2 /* InnovectoLabel.swift */,
+				D520BDF31CBFE743008092D2 /* InnovectoActionButton.swift */,
+				D520BDF41CBFE743008092D2 /* InnovectoButton.swift */,
+				D520BDF51CBFE743008092D2 /* InnovectoTextField.swift */,
+			);
+			name = Innovecto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,18 +290,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5756F511CB25FE9005ED719 /* DroidSerif-Bold.ttf in Resources */,
+				D520BE171CBFE908008092D2 /* Info.plist in Resources */,
+				D520BE001CBFE78C008092D2 /* gotham-rounded-book.otf in Resources */,
 				D50C2A0C1CB249CD00ED6A29 /* LaunchScreen.storyboard in Resources */,
-				D5756F521CB25FE9005ED719 /* DroidSerif-BoldItalic.ttf in Resources */,
-				D5756F551CB25FE9005ED719 /* LICENSE.txt in Resources */,
-				D5756F541CB25FE9005ED719 /* DroidSerif.ttf in Resources */,
-				D5756F5D1CB25FFD005ED719 /* RobotoSlab-Bold.ttf in Resources */,
-				D5756F5E1CB25FFD005ED719 /* RobotoSlab-Light.ttf in Resources */,
-				D5756F5C1CB25FFD005ED719 /* Apache License.txt in Resources */,
+				D520BE021CBFE78C008092D2 /* gotham-rounded-medium.otf in Resources */,
+				D520BE011CBFE78C008092D2 /* gotham-rounded-light.otf in Resources */,
 				D50C2A091CB249CD00ED6A29 /* Assets.xcassets in Resources */,
-				D5756F531CB25FE9005ED719 /* DroidSerif-Italic.ttf in Resources */,
-				D5756F601CB25FFD005ED719 /* RobotoSlab-Thin.ttf in Resources */,
-				D5756F5F1CB25FFD005ED719 /* RobotoSlab-Regular.ttf in Resources */,
+				D520BDFF1CBFE78C008092D2 /* gotham-rounded-bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,18 +355,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5756F471CB2531B005ED719 /* Global.swift in Sources */,
-				D538CA871CB80F8C00AB3978 /* Home_Views.swift in Sources */,
-				D57490691CB830E6002527F5 /* LabelBorder.swift in Sources */,
-				D50C2A011CB249CC00ED6A29 /* ViewController.swift in Sources */,
-				D57490651CB82E34002527F5 /* TextFieldBorder.swift in Sources */,
-				D5756F3F1CB24E3A005ED719 /* BaseViewController.swift in Sources */,
-				D50C2A071CB249CD00ED6A29 /* Tutorials.xcdatamodeld in Sources */,
-				D5756F671CB29EB9005ED719 /* TestViewController.swift in Sources */,
-				D57490631CB814C9002527F5 /* Login.swift in Sources */,
-				D57490671CB8307B002527F5 /* InnovectoButton.swift in Sources */,
-				D50C29FF1CB249CC00ED6A29 /* AppDelegate.swift in Sources */,
-				D5F5C3EC1CB2CDE7006A5670 /* PKNotification.swift in Sources */,
+				D520BE0E1CBFE820008092D2 /* InnovectoLabel.swift in Sources */,
+				D520BE111CBFE89D008092D2 /* Tutorials.xcdatamodeld in Sources */,
+				D520BE0C1CBFE7D2008092D2 /* AppDelegate.swift in Sources */,
+				D520BE071CBFE7BA008092D2 /* BaseViewController.swift in Sources */,
+				D520BDF71CBFE743008092D2 /* InnovectoButton.swift in Sources */,
+				D520BDFA1CBFE74F008092D2 /* PKNotification.swift in Sources */,
+				D520BE081CBFE7BA008092D2 /* ViewController.swift in Sources */,
+				D520BE0A1CBFE7C7008092D2 /* Global.swift in Sources */,
+				D520BDF81CBFE743008092D2 /* InnovectoTextField.swift in Sources */,
+				D520BDF61CBFE743008092D2 /* InnovectoActionButton.swift in Sources */,
+				D520BDF21CBFE70F008092D2 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +471,7 @@
 			baseConfigurationReference = 9D8FF50202707B1443C75D95 /* Pods-Tutorials.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Tutorials/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tutorials/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.digitaldevcasts.Tutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -493,7 +483,7 @@
 			baseConfigurationReference = 38EAAD1C912DACFF87B71FB6 /* Pods-Tutorials.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Tutorials/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tutorials/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.digitaldevcasts.Tutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,13 +514,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D50C2A051CB249CD00ED6A29 /* Tutorials.xcdatamodeld */ = {
+		D520BE0F1CBFE89D008092D2 /* Tutorials.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D50C2A061CB249CD00ED6A29 /* Tutorials.xcdatamodel */,
+				D520BE101CBFE89D008092D2 /* Tutorials.xcdatamodel */,
 			);
-			currentVersion = D50C2A061CB249CD00ED6A29 /* Tutorials.xcdatamodel */;
-			path = Tutorials.xcdatamodeld;
+			currentVersion = D520BE101CBFE89D008092D2 /* Tutorials.xcdatamodel */;
+			name = Tutorials.xcdatamodeld;
+			path = Others/Tutorials.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

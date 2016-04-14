@@ -73,7 +73,7 @@ class Height {
     }
 }
 
-class FontSize {
+class F_Size {
     
     static let FONT_10 : CGFloat = 10
     static let FONT_11 : CGFloat = 11
@@ -95,19 +95,12 @@ class FontSize {
     
 }
 
-class FontType {
+class F_Style {
     
-    /* Droid Serif */
-    static let D_BOLDITALIC = "DroidSerif-BoldItalic"
-    static let D_BOLD       = "DroidSerif-Bold"
-    static let D_ITALIC     = "DroidSerif-Italic"
-    static let D_REGULAR    = "DroidSerif"
-    
-    /* Roboto Slab */
-    static let R_BOLD       = "RobotoSlab-Bold"
-    static let R_LIGHT      = "RobotoSlab-Light"
-    static let R_REGULAR    = "RobotoSlab-Regular"
-    static let R_THIN       = "RobotoSlab-Thin"
+    static let G_LIGHT  = "GothamRounded-Light"
+    static let G_MEDIUM = "GothamRounded-Medium"
+    static let G_BOLD   = "GothamRounded-Bold"
+    static let G_BOOK   = "GothamRounded-Book"
     
 }
 

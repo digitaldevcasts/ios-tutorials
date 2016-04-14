@@ -9,31 +9,31 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
-    var firstLabel: LabelBorder!
-    var lastLabel: UILabel!
+    var firstLabel: InnovectoLabel!
+    var lastLabel: InnovectoLabel!
     let button = InnovectoButton()
-    let firstText = TextFieldBorder()
+    let firstText = InnovectoTextField()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = Color.BLUE_LIGHT_3
         
-        firstLabel = LabelBorder()
+        firstLabel = InnovectoLabel()
         firstLabel.frame = CGRectMake(20, 200, Global.WIDTH - 40, Height.Label.HEIGHT_50)
         firstLabel.text = "Ary Munandar"
-        firstLabel.font = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_20)
+        firstLabel.font = UIFont(name: F_Style.G_MEDIUM, size: F_Size.FONT_20)
         firstLabel.textColor = Color.WHITE
         firstLabel.textAlignment = .Center
         firstLabel.addBorder(.Bottom, color: Color.WHITE, width: 1)
         view.addSubview(firstLabel)
         
-        lastLabel = UILabel()
+        lastLabel = InnovectoLabel()
         lastLabel.frame = CGRectMake(20, firstLabel.frame.maxY, Global.WIDTH - 40, Height.Label.HEIGHT_50)
         lastLabel.text = "iOS Developer"
-        lastLabel.font = UIFont(name: FontType.R_BOLD, size: FontSize.FONT_20)
+        lastLabel.font = UIFont(name: F_Style.G_MEDIUM, size: F_Size.FONT_20)
         lastLabel.textColor = Color.WHITE
         lastLabel.textAlignment = .Center
         view.addSubview(lastLabel)
@@ -42,8 +42,8 @@ class ViewController: UIViewController {
         button.addTitle(
             "Digital Devcasts",
             color       : Color.BLUE,
-            style       : FontType.R_BOLD,
-            size        : FontSize.FONT_18,
+            style       : F_Style.G_MEDIUM,
+            size        : F_Size.FONT_18,
             alignment   : .Left,
             bgColor     :Color.WHITE,
             tintColor   : Color.BLUE
@@ -57,14 +57,15 @@ class ViewController: UIViewController {
         view.addSubview(button)
         
         firstText.frame = CGRectMake(20, Global.HEIGHT - 50, Global.WIDTH - 40, 30)
-        firstText.layer.masksToBounds = true
-        firstText.placeholder         = "First Name"
-        firstText.backgroundColor     = Color.CLEAR
-        firstText.tintColor           = Color.WHITE
-        firstText.addBorder(.Bottom, color: Color.WHITE, width: 1)
-        firstText.setValue(Color.WHITE, forKeyPath: "_placeholderLabel.textColor")
+        firstText.addGeneral(.Left, placeholder: "First Name", placeholderColor: Color.GREY_DARK_1, textColor: Color.WHITE, tintColor: Color.WHITE, bgColor: Color.CLEAR, F_Style: F_Style.G_MEDIUM, F_Size: F_Size.FONT_14)
+        firstText.addBorder(.Bottom, color: Color.WHITE, width: 2)
+        firstText.delegate = self
         view.addSubview(firstText)
         
+    }
+    
+    func tapped() {
+        print("OK")
     }
     
     func actionButton() {

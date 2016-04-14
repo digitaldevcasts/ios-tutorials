@@ -1,5 +1,5 @@
 //
-//  TextField.swift
+//  LabelBorder.swift
 //  Tutorials
 //
 //  Created by Innovecto iOS on 4/9/16.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-public enum UITextFieldBorderSide {
+public enum UILabelBorderSide {
     case Top, Bottom, Left, Right, All
 }
 
-class TextFieldBorder: UITextField {
+class InnovectoLabel: UILabel {
     
-    func addBorder(side: UITextFieldBorderSide, color: UIColor, width: CGFloat) {
+    func addBorder(side: UILabelBorderSide, color: UIColor, width: CGFloat) {
         let border         = CALayer()
         border.borderColor = color.CGColor
         border.borderWidth = width

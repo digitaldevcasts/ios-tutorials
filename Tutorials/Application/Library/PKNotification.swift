@@ -58,7 +58,7 @@ class PKNotificationClass: UIViewController {
     var toastRadious:CGFloat = 1
     var toastBackgroundColor:UIColor = UIColor.blackColor()
     var toastFontColor:UIColor = UIColor.whiteColor()
-    var toastFontStyle:UIFont = UIFont.systemFontOfSize(15)
+    var toastF_Style:UIFont = UIFont.systemFontOfSize(15)
     
     //PKProgress custom
     var progressHeight:CGFloat = 110
@@ -67,7 +67,7 @@ class PKNotificationClass: UIViewController {
     var progressRadious:CGFloat = 12
     var progressLabelHeight:CGFloat = 40
     var progressFontColor:UIColor = UIColor.whiteColor()
-    var progressFontStyle:UIFont = UIFont.boldSystemFontOfSize(14)
+    var progressF_Style:UIFont = UIFont.boldSystemFontOfSize(14)
     
     //--- loading
     var loadingBackgroundColor:UIColor = UIColor.blackColor()
@@ -85,9 +85,9 @@ class PKNotificationClass: UIViewController {
     var alertWidth:CGFloat = 335
     var alertMargin:CGFloat = 8
     var alertTitleFontColor:UIColor = UIColor.darkGrayColor()
-    var alertTitleFontStyle:UIFont = UIFont.boldSystemFontOfSize(17)
+    var alertTitleF_Style:UIFont = UIFont.boldSystemFontOfSize(17)
     var alertMessageFontColor:UIColor = UIColor.grayColor()
-    var alertMessageFontStyle:UIFont = UIFont.systemFontOfSize(13)
+    var alertMessageF_Style:UIFont = UIFont.systemFontOfSize(13)
     var alertButtonFontColor:UIColor = UIColor.grayColor()
     var alertBackgroundColor:UIColor = UIColor.whiteColor()
     var alertCornerRadius:CGFloat = 8
@@ -95,7 +95,7 @@ class PKNotificationClass: UIViewController {
     //PKActionSheet custom
     var actionSheetMargin:CGFloat = 8
     var actionSheetTitleFontColor:UIColor = UIColor.darkGrayColor()
-    var actionSheetTitleFontStyle:UIFont = UIFont.boldSystemFontOfSize(17)
+    var actionSheetTitleF_Style:UIFont = UIFont.boldSystemFontOfSize(17)
     var actionSheetButtonFontColor:UIColor = UIColor.grayColor()
     var actionSheetBackgroundColor:UIColor = UIColor.whiteColor()
     var actionSheetCornerRadius:CGFloat = 8
@@ -426,12 +426,12 @@ class PKNotificationClass: UIViewController {
             let titlePosY:CGFloat = margin
             titleLabel?.frame = CGRectMake(margin, titlePosY, messageLabelWidth, 40)
             titleLabel?.textColor = parent.alertTitleFontColor
-            titleLabel?.font = parent.alertTitleFontStyle
+            titleLabel?.font = parent.alertTitleF_Style
             titleLabel?.textAlignment = NSTextAlignment.Center
             
             let messagePosY:CGFloat = (titleLabel == nil) ? titlePosY + margin*2 : titlePosY + titleLabel!.frame.height + margin
             messageLabel?.textColor = parent.alertMessageFontColor
-            messageLabel?.font = parent.alertMessageFontStyle
+            messageLabel?.font = parent.alertMessageF_Style
             messageLabel?.textAlignment = NSTextAlignment.Center
             messageLabel?.numberOfLines = 0
             messageLabel?.frame = CGRectMake(margin, messagePosY, messageLabelWidth, 44)
@@ -444,7 +444,7 @@ class PKNotificationClass: UIViewController {
                 if (b.isKindOfClass(UITextField)){
                     (b as! UITextField).frame = CGRectMake(parent.alertMargin, buttonPosY, self.parent.alertWidth - 2 * parent.alertMargin, 44)
                     (b as! UITextField).layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
-                    (b as! UITextField).font = parent.alertMessageFontStyle
+                    (b as! UITextField).font = parent.alertMessageF_Style
                     buttonPosY += b.frame.height + margin
                 } else if (b.isKindOfClass(PKButton)){
                     (b as! PKButton).frame = CGRectMake(0, buttonPosY, self.parent.alertWidth, 44)
@@ -610,7 +610,7 @@ class PKNotificationClass: UIViewController {
             let actionSheetWidth:CGFloat = w - margin*2
             titleLabel?.frame = CGRectMake(0, titlePosY, actionSheetWidth, 40)
             titleLabel?.textColor = parent.actionSheetTitleFontColor
-            titleLabel?.font = parent.actionSheetTitleFontStyle
+            titleLabel?.font = parent.actionSheetTitleF_Style
             titleLabel?.textAlignment = NSTextAlignment.Center
             
             var buttonPosY:CGFloat = (titleLabel == nil) ? 0:  titlePosY + titleLabel!.frame.height + margin
@@ -786,7 +786,7 @@ class PKNotificationClass: UIViewController {
             toastView.backgroundColor = parent.toastBackgroundColor
             toastView.alpha = parent.toastAlpha
             toastView.layer.cornerRadius = parent.toastRadious
-            messageLabel.font = parent.toastFontStyle
+            messageLabel.font = parent.toastF_Style
             messageLabel.textColor = parent.toastFontColor
             messageLabel.textAlignment = NSTextAlignment.Center
             messageLabel.text = m
@@ -899,7 +899,7 @@ class PKNotificationClass: UIViewController {
             if(m != nil){
                 let messageLabel:UILabel = UILabel()
                 messageLabel.frame = CGRectMake(0, parent.progressHeight - parent.progressLabelHeight, parent.progressWidth, parent.progressLabelHeight)
-                messageLabel.font = parent.progressFontStyle
+                messageLabel.font = parent.progressF_Style
                 messageLabel.textColor = parent.progressFontColor
                 messageLabel.textAlignment = NSTextAlignment.Center
                 messageLabel.text = m
@@ -926,7 +926,7 @@ class PKNotificationClass: UIViewController {
             if(m != nil){
                 let messageLabel:UILabel = UILabel()
                 messageLabel.frame = CGRectMake(0, parent.progressHeight - parent.progressLabelHeight, parent.progressWidth, parent.progressLabelHeight)
-                messageLabel.font = parent.progressFontStyle
+                messageLabel.font = parent.progressF_Style
                 messageLabel.textColor = parent.progressFontColor
                 messageLabel.textAlignment = NSTextAlignment.Center
                 messageLabel.text = m

@@ -43,14 +43,10 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>RobotoSlab-Bold.ttf</string>
-		<string>RobotoSlab-Light.ttf</string>
-		<string>RobotoSlab-Regular.ttf</string>
-		<string>RobotoSlab-Thin.ttf</string>
-		<string>DroidSerif-Bold.ttf</string>
-		<string>DroidSerif-BoldItalic.ttf</string>
-		<string>DroidSerif-Italic.ttf</string>
-		<string>DroidSerif.ttf</string>
+		<string>gotham-rounded-bold.otf</string>
+		<string>gotham-rounded-light.otf</string>
+		<string>gotham-rounded-medium.otf</string>
+		<string>gotham-rounded-book.otf</string>
 	</array>
 </dict>
 </plist>
